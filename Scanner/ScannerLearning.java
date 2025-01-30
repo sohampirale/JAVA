@@ -36,8 +36,8 @@ public class ScannerLearning{
         System.out.println("You entered line : "+line);
     }
 
-    public static delimiterExample(){
-        string str;
+    public static void delimiterExample(){
+        String str;
         Scanner lineScanner=new Scanner(System.in);
     }
 
@@ -54,6 +54,15 @@ public class ScannerLearning{
     }
 
     public static void main(String[] args){
+
+        // Integer temp;
+        // Scanner IntegerScanner= new Scanner(System.in);
+        // Character ch='A';
+        // System.out.println("ch = "+ch);
+        // System.out.println("ch = "+ch);
+        // temp=IntegerScanner.nextInt();
+        // System.out.println("You entered "+temp);
+
         System.out.println("Hello JAVA.");
         int choice=1;
         while(choice!=0){
