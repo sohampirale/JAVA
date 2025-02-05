@@ -1,3 +1,4 @@
+package College.S2.Exp1;
 import java.util.Scanner;
 
 public class CompoundInterest{
