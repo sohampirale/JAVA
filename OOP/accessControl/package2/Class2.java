@@ -9,6 +9,7 @@ public class Class2 extends Class1{
     // int var4=-1;
     
     public static void main(String[] args) {
+        //here because Class1 is in different class the Class2 needs to inherit it in order to access protected members
         Class1 obj = new Class1();
         // Accessing variables from Class1
         System.out.println("var1 = " + obj.var1);
