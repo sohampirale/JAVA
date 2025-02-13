@@ -7,8 +7,16 @@ public class Main {
         Scanner input = new Scanner(System.in);
         int choice = 1;
         while (choice != 0) {
-            System.out.println("1 : Area of Rectangle");
-            System.out.println("2 : Create student obj");
+            System.out.println("1 : Area of Rectangle Question1");
+            System.out.println("2 : Create student obj Question2");
+            System.out.println("3 : Create student obj Question3");
+            System.out.println("4 : Perimeter & area of a triangle Question4");
+            System.out.println("5 : Perimeter & area of a traingle Question5");
+            System.out.println("6 : Area of two rectangles Question6");
+            System.out.println("7 : Area of two rectangles Question7");
+            System.out.println("8 : Average of 3 numbers Question8");
+            System.out.println("9 : Operations on complex numbers Question9");
+            System.out.println("10 : Prin information fo student Question10");
             System.out.println("0 : Exit");
             System.out.print("Your choice: ");
             choice = input.nextInt();
@@ -31,7 +39,7 @@ public class Main {
             } else if(choice==9){
                 ComplexNums.main(args);
             } else if(choice==10){
-
+                printStudentInfo.main(args);
             }
         }
     }

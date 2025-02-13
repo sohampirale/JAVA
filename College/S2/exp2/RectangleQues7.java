@@ -1,5 +1,5 @@
 package College.S2.exp2;
-
+import java.util.Scanner;
 public class RectangleQues7 {
     double lentgh,breadth;
     RectangleQues7(double lentgh,double breadth){

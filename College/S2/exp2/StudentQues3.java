@@ -1,3 +1,4 @@
+package College.S2.exp2;
 import java.util.Scanner;
 
 public class StudentQues3 {
@@ -5,6 +6,7 @@ public class StudentQues3 {
     String name;
     long phoneNo;
     String address;
+
     StudentQues3(int rollno,long phoneNo,String name,String address){
         this.name=name;
         this.rollno=rollno;

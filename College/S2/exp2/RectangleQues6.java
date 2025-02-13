@@ -1,7 +1,5 @@
 package College.S2.exp2;
 
-public package College.S2.exp2;
-
 public class RectangleQues6 {
     double lentgh,breadth;
 

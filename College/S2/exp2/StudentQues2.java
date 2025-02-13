@@ -1,3 +1,5 @@
+package College.S2.exp2;
+
 public class StudentQues2 {
     int rollno;
     String name;
