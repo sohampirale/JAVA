@@ -11,8 +11,6 @@ public class Main{
     }
 }
 
-
-
 class Parents{
     int test1;
     protected int test2;
