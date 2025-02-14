@@ -29,9 +29,9 @@ public class Ques1AddTwoNumbers {
         Scanner input=new Scanner(System.in);
         double num1,num2;
         System.out.print("Enter num1 : ");
-        num1=input.nextInt();
+        num1=input.nextDouble();
         System.out.print("Enter num2 : ");
-        num2=input.nextInt();
+        num2=input.nextDouble();
 
         Base obj=new Perform(num1, num2);
         System.out.println("Addition of the two enetred numbers is : "+obj.add());

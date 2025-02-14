@@ -1,5 +1,4 @@
 package College.S2.exp3;
-import java.util.Arrays;
 import java.util.Scanner;
 
 abstract class Marks{
