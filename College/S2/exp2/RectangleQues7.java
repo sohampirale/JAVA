@@ -1,5 +1,9 @@
 package College.S2.exp2;
+<<<<<<< HEAD
+
+=======
 import java.util.Scanner;
+>>>>>>> b0a7f37e5360921acdbb5827be9ac31827aea3ba
 public class RectangleQues7 {
     double lentgh,breadth;
     RectangleQues7(double lentgh,double breadth){

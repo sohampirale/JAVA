@@ -1,7 +1,7 @@
 package College.S2.exp3;
 import java.util.HashMap;
 import java.util.Scanner;
-abstract class Item{
+abstract class Itemm{
     static HashMap<String,Integer> priceMap=new HashMap<>();
     static{
         priceMap.put("sugar",50);
@@ -13,7 +13,7 @@ abstract class Item{
 
 }
 
-class DiscountItems extends Item{
+class DiscountItemms extends Itemm{
     static HashMap<String,Integer>discount=new HashMap<>();
     static{
         discount.put("sugar",10);
@@ -23,34 +23,34 @@ class DiscountItems extends Item{
         discount.put("salt", 15);
     }
 
-    public static void showItems(){
-        priceMap.forEach((item,price) -> {
-            System.out.println(item+" avalaible for "+price+"Rs/kg at discount of "+discount.get(item));
+    public static void showItemms(){
+        priceMap.forEach((itemm,price) -> {
+            System.out.println(itemm+" avalaible for "+price+"Rs/kg at discount of "+discount.get(itemm));
         });
     }
 }
 
 
-class Cart extends DiscountItems{
+class Cart extends DiscountItemms{
 
     HashMap<String,Double> cart=new HashMap<>();
 
    
 
-    void order(String item,Double quantity){
-        cart.put(item,quantity);
+    void order(String itemm,Double quantity){
+        cart.put(itemm,quantity);
     }
 
     double cost=0;
     double totalSaved=0;
-    static double giveDiscountedPrice(String item){
-        return priceMap.get(item)-(priceMap.get(item)*discount.get(item)/100);
+    static double giveDiscountedPrice(String itemm){
+        return priceMap.get(itemm)-(priceMap.get(itemm)*discount.get(itemm)/100);
     }
 
     double checkOut(){
-        cart.forEach((item,quantity)-> {
-            double discountedCost=giveDiscountedPrice(item);
-            totalSaved+=(priceMap.get(item)-discountedCost)*quantity;
+        cart.forEach((itemm,quantity)-> {
+            double discountedCost=giveDiscountedPrice(itemm);
+            totalSaved+=(priceMap.get(itemm)-discountedCost)*quantity;
             cost+=(discountedCost*quantity);
         });
         double temp=cost;
@@ -61,32 +61,32 @@ class Cart extends DiscountItems{
 
 }
 
-public class Ques4_ItemsWithDiscount {
+public class Ques4_ItemmsWithDiscount {
     public static void main(String[] args) {
         Scanner input=new Scanner(System.in);
         int choice=1;
-        String item;
+        String itemm;
         double quantity;
-        DiscountItems.showItems();
+        DiscountItemms.showItemms();
         Cart cart=null;
         while(choice!=0){
-            System.out.println("1 : Buy another item");
+            System.out.println("1 : Buy another itemm");
             System.out.println("0 : Checkout");
             System.out.print("Your choice : ");
             choice=input.nextInt();
             if(choice==1){
-                System.out.print("Enter name of the item : ");
-                item=input.next();
-                item=item.toLowerCase();
-                if(!Item.priceMap.containsKey(item)){
-                    System.out.println("Invalid item name entered");
+                System.out.print("Enter name of the itemm : ");
+                itemm=input.next();
+                itemm=itemm.toLowerCase();
+                if(!Itemm.priceMap.containsKey(itemm)){
+                    System.out.println("Invalid itemm name entered");
                 } else {
-                    System.out.print("Enter quantity you want of : "+item);
+                    System.out.print("Enter quantity you want of : "+itemm);
                     quantity=input.nextDouble();
                     if(cart==null){
                         cart=new Cart();
                     }
-                    cart.order(item, quantity);
+                    cart.order(itemm, quantity);
                 }
             }
         }

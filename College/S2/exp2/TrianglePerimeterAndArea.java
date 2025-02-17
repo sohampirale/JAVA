@@ -31,8 +31,18 @@ public class TrianglePerimeterAndArea {
     }
     public static void main(String[] args) {
         Scanner input=new Scanner(System.in);
+<<<<<<< HEAD
+        double s1,s2,s3;
+        System.out.print("Enter s1 : ");
+        s1=input.nextInt();
+        System.out.print("Enter s2 : ");
+        s2=input.nextInt();
+        System.out.print("Enter s3 : ");
+        s3=input.nextInt();
+=======
         double s1=3,s2=4,s3=5;
        
+>>>>>>> b0a7f37e5360921acdbb5827be9ac31827aea3ba
         TrianglePerimeterAndArea t=new TrianglePerimeterAndArea(s1,s2,s3);
         t.showArea();
         t.showPerimeter();
