@@ -1,5 +1,8 @@
 // package cloning;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+
 class c2{
     static{
         System.out.println("Static from c2");
@@ -30,20 +33,41 @@ class Test implements Cloneable{
     }
 }
 
+class Testing{
+
+    public static void swap(Integer num1,Integer num2){
+        int temp=num1;
+        num1=num2;
+        num2=num1;
+    }
+}
+
 public class Main  {
     static{
         System.out.println("Static from Main");
     }
     public static void main(String[] args) throws CloneNotSupportedException{
-        Test obj1=new Test(20);
-        Test obj2=obj1.clone();
-        obj1.var=10;
+        int[] arr1=new int[5];
+        System.out.println(Arrays.toString(arr1));
 
-        System.out.println(obj1);
-        System.out.println(obj2);
-        System.out.println("hi");
-        c2 obj3=new c2();
-        System.out.println("hi");
-        c2 obj4=new c2();
+        ArrayList<Integer> al=new ArrayList<>(10);
+        System.out.println(al);
+        System.out.println(al.size());
+        // System.out.println(al.capacity());
+        // Test obj1=new Test(20);
+        // Test obj2=obj1.clone();
+        // obj1.var=10;
+
+        // System.out.println(obj1);
+        // System.out.println(obj2);
+        // System.out.println("hi");
+        // c2 obj3=new c2();
+        // System.out.println("hi");
+        // c2 obj4=new c2();
+        Integer var1=10;
+        Integer var2=20;
+        Testing.swap(var1,var2);
+        System.out.println("var1 = "+var1);
+        System.out.println("var2 = "+var2);
     }
 }
