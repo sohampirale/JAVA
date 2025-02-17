@@ -1,7 +1,10 @@
 package College.S2.exp2;
 
+<<<<<<< HEAD
 public package College.S2.exp2;
 
+=======
+>>>>>>> b0a7f37e5360921acdbb5827be9ac31827aea3ba
 public class RectangleQues6 {
     double lentgh,breadth;
 
