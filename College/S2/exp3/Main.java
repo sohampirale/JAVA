@@ -1,5 +1,6 @@
-package College.S2.exp3;
+package expClass;
 import java.util.Scanner;
+// import expClass.*;
 public class Main {
     public static void main(String[] args) {
         Scanner input=new Scanner(System.in);

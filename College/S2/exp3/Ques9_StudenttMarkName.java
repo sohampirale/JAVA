@@ -1,7 +1,7 @@
-package College.S2.exp3;
-import java.util.HashMap;
+package expClass;
 import java.util.Scanner;
 import java.util.Arrays;
+import java.util.HashMap;
 class Studentt{
     public static HashMap<String,int[]>allStudentts=new HashMap<>();
     int[] marks;

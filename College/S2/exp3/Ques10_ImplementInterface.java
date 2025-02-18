@@ -1,4 +1,4 @@
-package College.S2.exp3;
+package expClass;
 import java.util.Scanner;
 interface P1{
     int var1=10;

@@ -1,4 +1,4 @@
-package College.S2.exp3;
+package expClass;
 import java.util.Scanner;
 import java.util.ArrayList;
 import java.util.Collections;

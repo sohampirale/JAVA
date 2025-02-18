@@ -1,4 +1,4 @@
-package College.S2.exp3;
+package expClass;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Scanner;
@@ -20,7 +20,7 @@ class Test extends Student{
         for(int mark:makrsOfAllStudents.get(rollno)){
             total+=mark;
         }
-        return (double)(((double)total/(double)_(100*makrsOfAllStudents.get(rollno).size()))*100);
+        return (double)(((double)total/(double)(100*makrsOfAllStudents.get(rollno).size()))*100);
     }
 
     Test(ArrayList<Integer>marks,int rollno){
